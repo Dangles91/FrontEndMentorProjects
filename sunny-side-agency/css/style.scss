@@ -41,7 +41,7 @@ header {
     padding: 0;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1440px;
+    max-width: $content-maxWidth;
 }
 
 .header {
@@ -55,14 +55,16 @@ header {
     flex-direction: column;
     align-items: center;
     margin: 0;
+
     p {
         text-transform: uppercase;
     }
+
     img {
         margin-top: 5rem;
     }
-    h1 {
 
+    h1 {
         text-transform: uppercase;
         letter-spacing: .8rem;
     }
@@ -82,10 +84,12 @@ header {
     
     background-color: $white;
     display: none;
+
     li {
         list-style-type: none;
         padding: 1.3rem;
     }
+
     li a {
         text-decoration: none;
         color: $darkModCyan;
@@ -193,10 +197,11 @@ header {
         border-radius: 15px;
         left: -5px;
     }
+
     &.yellow:after {
         background-color: $primaryYellowHighlight;
-
     }
+
     &.yellow:hover:after {
         background-color: $primaryYellow;
     }
@@ -204,6 +209,7 @@ header {
     &.red:after {
         background-color: $primaryRedHighlight;
     }
+
     &.red:hover:after {
         background-color: $primaryRed;
     }
@@ -288,14 +294,17 @@ footer {
         height: 40px;
         fill: $darkModCyan;
     }
+
     .footer-gallery {
         display: flex;
         flex-flow: row wrap;
-        max-width: 1440px;
+        max-width: $content-maxWidth;
+
         img {
             width: 50%;
         }
     }
+
     .footer-nav {
         display: flex;
         flex-direction: row;
@@ -303,6 +312,7 @@ footer {
         
         li {
             margin: 1rem 2rem;
+
             a {
                 color: $darkModCyan;
                 text-decoration: none;
@@ -312,13 +322,16 @@ footer {
             }
         }
     }
+
     .socials {
         display: flex;
         flex-direction: row;
         cursor: pointer;
+
         svg {
             fill: $darkModCyan;
             margin: 4rem 1rem;
+
             &:hover {
                 fill: $white;
             }
@@ -330,9 +343,11 @@ footer {
     .about-image {
         width: 100%;
         height: 100%;
+
         .mobile {
             display: none;
         }
+
         .desktop {
             display: block;
         }
@@ -354,8 +369,10 @@ footer {
         li a {
             color: $white;
         }
+
         .nav-contact {
             background: $white;
+
             &:hover 
             {
                 background: $transparentWhite;
@@ -376,6 +393,7 @@ footer {
     .header {
         background-image: url("images/desktop/image-header.jpg");
         background-position: center;
+
         img {
             margin-top: 10rem;
         }
@@ -398,7 +416,6 @@ footer {
                     order: 0;
                 }
             }
-
         }
     }
 
@@ -409,14 +426,17 @@ footer {
 
     .services-list {
         flex-direction: row;
+
         .service {
             background-position: center;
             padding: 1rem 8rem 3rem 10rem;
             height: 600px;
             width: 50%;
+
             &.graphic-design {
                 background-image: url("images/desktop/image-graphic-design.jpg");
             }
+
             &.photography {
                 background-image: url("images/desktop/image-photography.jpg");
             }
@@ -430,6 +450,7 @@ footer {
             display: flex;
             align-items: flex-end;
             flex-direction: row;
+
             .testimonial {
                 
                 margin: 0;
@@ -443,11 +464,7 @@ footer {
             width: 100%;
         }
     }   
-
-
-
 }
-
 
 .attribution {
     font-size: 11px;
