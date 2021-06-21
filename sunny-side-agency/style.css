@@ -1,0 +1,531 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap");
+/* line 4, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+h1, h2, h3 {
+  font-family: "Fraunces", serif;
+}
+
+/* line 8, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* line 13, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+body {
+  background-color: #3dbeff;
+  padding: 0;
+  margin: 0;
+  color: #458c7e;
+  font-size: 18px;
+  font-family: 'Barlow', sans-serif;
+}
+
+/* line 22, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+.about-image.desktop {
+  display: none;
+}
+
+/* line 26, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+.nav {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 34, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+header {
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* line 39, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+.content {
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
+}
+
+/* line 47, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+.header {
+  background-image: url("images/mobile/image-header.jpg");
+  background-position: bottom;
+  background-size: cover;
+  text-align: center;
+  height: 40vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+/* line 58, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+.header p {
+  text-transform: uppercase;
+}
+
+/* line 61, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+.header img {
+  margin-top: 5rem;
+}
+
+/* line 64, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+.header h1 {
+  text-transform: uppercase;
+  letter-spacing: .8rem;
+}
+
+/* line 71, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+#nav-logo {
+  flex-grow: 1;
+}
+
+/* line 75, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+#nav-items {
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  padding: 2rem 0;
+  background-color: white;
+  display: none;
+}
+
+/* line 85, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+#nav-items li {
+  list-style-type: none;
+  padding: 1.3rem;
+}
+
+/* line 89, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+#nav-items li a {
+  text-decoration: none;
+  color: #458c7e;
+  font-weight: 900;
+  text-align: center;
+}
+
+/* line 95, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+#nav-items .nav-contact {
+  box-sizing: border-box;
+  background: #fad400;
+  text-transform: uppercase;
+  font-family: "Fraunces", serif;
+  font-size: 16px;
+  color: black;
+  padding: 1rem 1.5rem;
+  border-radius: 25px;
+}
+
+/* line 108, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+#nav-items.shown {
+  display: flex;
+}
+
+/* line 112, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+#nav-items:before {
+  content: '';
+  position: absolute;
+  border-bottom: 80px solid white;
+  border-left: 80px solid transparent;
+  top: -20px;
+  right: 0;
+  width: 0;
+}
+
+/* line 122, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+.about-list {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 126, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+.about-list .about-item {
+  display: flex;
+  font-weight: 600;
+  flex-direction: column;
+  background-color: white;
+}
+
+/* line 133, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+.about-list .about-item .about-text {
+  text-align: center;
+  line-height: 3ch;
+  color: #458c7e;
+  padding: 3rem 1rem;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  order: 1;
+}
+
+/* line 145, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+.about-list .about-item .about-text.first {
+  order: 1;
+}
+
+/* line 149, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+.about-list .about-item .about-text h1 {
+  font-family: "Fraunces", serif;
+  font-size: 28pt;
+  font-weight: 900;
+  line-height: normal;
+  color: #23303e;
+}
+
+/* line 157, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+.about-list .about-item .about-text p {
+  margin-bottom: 2.5rem;
+}
+
+/* line 164, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+.about-image-wrapper {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* line 168, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+.about-image-wrapper .about-image {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 174, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+.cta-link {
+  margin-top: 3rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Fraunces", serif;
+  box-sizing: border-box;
+  font-weight: 900;
+  color: #23303e;
+  position: relative;
+  z-index: 1;
+}
+
+/* line 186, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+.cta-link:after {
+  content: '';
+  position: absolute;
+  top: 14px;
+  z-index: -1;
+  width: 110%;
+  height: 10px;
+  border-radius: 15px;
+  left: -5px;
+}
+
+/* line 196, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+.cta-link.yellow:after {
+  background-color: #fef3b4;
+}
+
+/* line 200, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+.cta-link.yellow:hover:after {
+  background-color: #fad400;
+}
+
+/* line 204, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+.cta-link.red:after {
+  background-color: #ffbcb3;
+}
+
+/* line 207, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+.cta-link.red:hover:after {
+  background-color: #fe7867;
+}
+
+/* line 212, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+.services-list {
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+}
+
+/* line 216, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+.services-list .service {
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  height: 600px;
+}
+
+/* line 226, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+.services-list .service.graphic-design {
+  color: #25564b;
+  background-image: url("images/mobile/image-graphic-design.jpg");
+}
+
+/* line 230, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+.services-list .service.photography {
+  color: #19536b;
+  background-image: url("images/mobile/image-photography.jpg");
+}
+
+/* line 237, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+.testimonials {
+  text-align: center;
+  background-color: white;
+  margin: 0;
+  padding: 1rem;
+}
+
+/* line 242, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+.testimonials h3 {
+  text-transform: uppercase;
+  color: #a7abae;
+  letter-spacing: .6rem;
+}
+
+/* line 247, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+.testimonials .testimonials-list {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 250, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+.testimonials .testimonials-list .testimonial {
+  margin: 2rem 0;
+}
+
+/* line 252, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+.testimonials .testimonials-list .testimonial img {
+  border-radius: 50%;
+  width: 23%;
+}
+
+/* line 256, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+.testimonials .testimonials-list .testimonial p {
+  padding: 1rem;
+  font-size: 18px;
+}
+
+/* line 262, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+.testimonials .testimonials-list .testimonial .testimonial-person p {
+  padding: 0;
+  margin: .5rem;
+  font-size: 16px;
+  color: #a7abae;
+}
+
+/* line 268, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+.testimonials .testimonials-list .testimonial .testimonial-person strong {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 20px;
+  color: #23303e;
+}
+
+/* line 279, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+footer {
+  display: flex;
+  background: #91d4c6;
+  flex-direction: column;
+  align-items: center;
+  color: #458c7e;
+}
+
+/* line 286, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+footer #footer-logo {
+  margin-top: 3rem;
+  height: 40px;
+  fill: #458c7e;
+}
+
+/* line 291, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+footer .footer-gallery {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 1440px;
+}
+
+/* line 295, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+footer .footer-gallery img {
+  width: 50%;
+}
+
+/* line 299, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+footer .footer-nav {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+/* line 304, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+footer .footer-nav li {
+  margin: 1rem 2rem;
+}
+
+/* line 306, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+footer .footer-nav li a {
+  color: #458c7e;
+  text-decoration: none;
+}
+
+/* line 309, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+footer .footer-nav li a:hover {
+  color: white;
+}
+
+/* line 315, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+footer .socials {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+/* line 319, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+footer .socials svg {
+  fill: #458c7e;
+  margin: 4rem 1rem;
+}
+
+/* line 322, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+footer .socials svg:hover {
+  fill: white;
+}
+
+@media only screen and (min-width: 992px) {
+  /* line 330, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+  .about-image {
+    width: 100%;
+    height: 100%;
+  }
+  /* line 333, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+  .about-image .mobile {
+    display: none;
+  }
+  /* line 336, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+  .about-image .desktop {
+    display: block;
+  }
+  /* line 341, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+  #nav-items {
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 9;
+    justify-content: flex-end;
+    align-items: center;
+    top: 0;
+    margin: 0;
+    padding: 0;
+  }
+  /* line 354, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+  #nav-items li a {
+    color: white;
+  }
+  /* line 357, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+  #nav-items .nav-contact {
+    background: white;
+  }
+  /* line 359, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+  #nav-items .nav-contact:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: white;
+  }
+  /* line 367, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+  #mobile-burger {
+    display: none;
+  }
+  /* line 371, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+  #nav-items:before {
+    display: none;
+    border: 0;
+  }
+  /* line 376, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+  .header {
+    background-image: url("images/desktop/image-header.jpg");
+    background-position: center;
+  }
+  /* line 379, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+  .header img {
+    margin-top: 10rem;
+  }
+  /* line 385, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+  .about-list .about-item {
+    flex-direction: row;
+  }
+  /* line 388, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+  .about-list .about-item .about-text {
+    text-align: left;
+    box-sizing: border-box;
+    width: 50%;
+    margin: auto;
+    padding: 0 7.0rem 0 10rem;
+    order: 1;
+  }
+  /* line 397, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+  .about-list .about-item .about-text.first {
+    order: 0;
+  }
+  /* line 405, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+  .about-image-wrapper {
+    width: 50%;
+    box-sizing: border-box;
+  }
+  /* line 410, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+  .services-list {
+    flex-direction: row;
+  }
+  /* line 412, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+  .services-list .service {
+    background-position: center;
+    padding: 1rem 8rem 3rem 10rem;
+    height: 600px;
+    width: 50%;
+  }
+  /* line 417, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+  .services-list .service.graphic-design {
+    background-image: url("images/desktop/image-graphic-design.jpg");
+  }
+  /* line 420, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+  .services-list .service.photography {
+    background-image: url("images/desktop/image-photography.jpg");
+  }
+  /* line 425, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+  .testimonials {
+    padding: 4rem;
+  }
+  /* line 428, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+  .testimonials .testimonials-list {
+    padding: 2rem 4rem;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+  }
+  /* line 433, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+  .testimonials .testimonials-list .testimonial {
+    margin: 0;
+  }
+  /* line 441, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+  footer .footer-gallery {
+    flex-flow: row nowrap;
+    width: 100%;
+  }
+}
+
+/* line 452, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+/* line 457, ../../../Desktop/frontend-mentor/sunnyside/css/style.scss */
+.attribution a {
+  color: #25564b;
+}
+
+/*# sourceMappingURL=style.css.map */

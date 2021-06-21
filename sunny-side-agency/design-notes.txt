@@ -1,0 +1,39 @@
+Navigation
+    nav logo
+    Nav menu
+    burger - show menu
+
+Hero/header
+    Centered image - css background
+    Text and image overlay
+
+About
+    Grid item with image - mobile/desktop
+    Grid item with text
+        Desktop - Left align
+        Mobile - Center align
+    Grid/Flex 
+    Text/Image
+
+Services
+    Image with floating text
+        Mobile/Desktop - text center align
+        Image - centered
+        mobile - Column
+        desktop - row
+
+Testimonials
+    Ciruclar person image
+    Message
+    Person Name
+    Person Position
+    Desktop - row
+    Mobile - Column
+
+Footer
+    Footer images
+        Desktop - row
+        Mobile - 2x2 grid (wrapped row)
+    Centered logo
+    Navigation
+    Socials
