@@ -1,15 +1,23 @@
 @import "globals";
 @import "colours";
 @import "fonts";
+
+
 * {
     box-sizing: border-box;
-    margin: 0;
+    //margin: 0;
     padding: 0;
+}
+
+p {
+    //padding: .5rem;
 }
 
 body {
     font-size: 16px;
     font-family: "Overpass", sans-serif;
+    font-weight: 600;
+    color: $veryDarkBlue;
     margin: 0;
 }
 
@@ -24,16 +32,24 @@ header {
     display: flex;
     width: 100%;
     flex-direction: column;
-    height: 40vh;
+    height: 75vh;
     background-image: url("images/bg-pattern-intro.svg"), linear-gradient(to bottom right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 0 0 0 100px;
-    padding: 2rem;
+    padding: 0rem 2rem 2rem 2rem;
     box-sizing: border-box;
+
+    @media only screen and (min-width: $breakpoint-desktop) {
+        height: 45vh;
+    }
+    @media only screen and (min-width: $breakpoint-tablet) {
+        height: 45vh;
+    }
 }
 
 .nav {
+    padding-top: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -45,15 +61,20 @@ header {
 .nav-menus {
     text-align: center;
     box-sizing: border-box;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     position: absolute;
     width: 100%;
-    top: 100px;
+    top: 7rem;
     padding: 2rem 0;
     background: $white;
-    border-radius: 16px;
+    border-radius: 6px;
+    padding: 1.5rem;
+    box-shadow: 0px 15px 20px 4px rgba(36, 36, 36, 0.274);
+    &.shown {
+        display: flex;
+    }
 }
 
 .menu-button {
@@ -63,7 +84,7 @@ header {
     }
     &.shown {
         .burger {
-            display: hidden;
+            display: none;
         }
         .cross {
             display: block;
@@ -72,9 +93,141 @@ header {
 }
 
 .nav-menu {
-    padding: 1rem;
+    padding: 1rem 0;
+    font-size: 20px;
+    width: 100%;
+    .menu-header {
+        display: relative;
+        padding: 1rem;
+        
+        &:after {
+            position: absolute;
+            display: inline-block;
+            margin-left: .5rem;
+            font-size: 20px;
+            font-family: "Font Awesome 5 Free";
+            color: $lightRed;
+            font-weight: 900;
+            content: '\f107'; // chevron-down
+        }
+    }
     .nav-menu-dropdown {
-        padding: 0rem;
+        display: none;
+        padding: 1rem;
+        margin-top: 1rem;
+        background-color:$lightGray;
+        width: 100%;
+        color: $darkGrayishBlue;
+        border-radius: 8px;
         list-style: none;
+        li {
+            padding: .8rem;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
+    }  
+
+    .menu-header.shown {
+        color: $darkGrayishBlue;
+        &::after {
+            content: "\f106";
+        }
+    }
+
+    .menu-header.shown+.nav-menu-dropdown {
+        display: block;
+    }
+}
+
+
+.header-buttons {
+    
+}
+
+.nav-account-actions {
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+
+    hr {
+        color: $lightGray;
+        margin: 0;
+    }
+
+    .account-action-buttons {
+        margin-top: 1rem;
+        list-style: none;
+        li {
+            padding: 1.5rem;
+        }
+    }
+}
+
+.btn {
+    color: inherit;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.btn-signup {
+    padding: 1rem 3rem;
+    border-radius: 25px;
+    background-image: linear-gradient(to right, $veryLightRed, $lightRed);
+    color: $white;
+
+    @media only screen and (min-width: $breakpoint-desktop)
+    {
+        background-image: unset;
+        background-color: $white;
+    }
+}
+
+.header-content {
+    color: $white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.horizontal-btn-container {
+    margin-top: 2rem;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.btn-white {
+    margin: .5rem;
+    padding: 1rem 1rem;
+    border-radius: 25px;
+    text-decoration: none;
+
+    &.solid {
+        color: $lightRed;
+        background-color: $white;
+        &:hover {
+            background-color: $veryLightRed;
+            color: $white;
+        }
+    }
+
+    &.outline {
+        border: 2px solid $white;
+        color: $white;
+
+        &:hover {
+            background-color: white;
+            color: $lightRed;
+        }
     }
 }
