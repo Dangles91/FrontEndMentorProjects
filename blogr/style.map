@@ -1,0 +1,18 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"css/style.scss",
+		"css/_globals.scss",
+		"css/_colours.scss",
+		"css/_fonts.scss"
+	],
+	"sourcesContent": [
+		"@import \"globals\";\r\n@import \"colours\";\r\n@import \"fonts\";\r\n* {\r\n    box-sizing: border-box;\r\n    margin: 0;\r\n    padding: 0;\r\n}\r\n\r\nbody {\r\n    font-size: 16px;\r\n    font-family: \"Overpass\", sans-serif;\r\n    margin: 0;\r\n}\r\n\r\nh1,\r\nh2,\r\nh3,\r\nh4 {\r\n    font-family: \"Overpass\", sans-serif;\r\n}\r\n\r\nheader {\r\n    display: flex;\r\n    width: 100%;\r\n    flex-direction: column;\r\n    height: 40vh;\r\n    background-image: url(\"images/bg-pattern-intro.svg\"), linear-gradient(to bottom right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));\r\n    background-position: center;\r\n    background-repeat: no-repeat;\r\n    border-radius: 0 0 0 120px;\r\n    padding: 2rem;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.nav {\r\n    display: flex;\r\n    flex-direction: row;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n    box-sizing: border-box;\r\n    position: relative;\r\n}\r\n\r\n.nav-menus {\r\n    text-align: center;\r\n    box-sizing: border-box;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    position: absolute;\r\n    width: 100%;\r\n    top: 100px;\r\n    padding: 2rem 0;\r\n    background: $white;\r\n    border-radius: 16px;\r\n}\r\n\r\n.menu-button {\r\n    cursor: pointer;\r\n    .cross {\r\n        display: none;\r\n    }\r\n    &.shown {\r\n        .burger {\r\n            display: hidden;\r\n        }\r\n        .cross {\r\n            display: block;\r\n        }\r\n    }\r\n}\r\n\r\n.nav-menu {\r\n    padding: 1rem;\r\n    .nav-menu-dropdown {\r\n        padding: 0rem;\r\n        list-style: none;\r\n    }\r\n}",
+		"$breakpoint-mobile: 375px;\r\n$breakpoint-desktop: 1440px;",
+		"$white: hsl(0, 0%, 100%);",
+		"//    font-family: 'Overpass', sans-serif;\r\n@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap');\r\n//     font-family: 'Ubuntu', sans-serif;\r\n@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');"
+	],
+	"names": [],
+	"mappings": "AGCA,OAAO,CAAC,kFAAI;AAEZ,OAAO,CAAC,oFAAI;;AHAZ,AAAA,CAAC,CAAC;EACE,UAAU,EAAE,UAAU;EACtB,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CACb;;;AAED,AAAA,IAAI,CAAC;EACD,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,sBAAsB;EACnC,MAAM,EAAE,CAAC;CACZ;;;AAED,AAAA,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE,CAAC;EACC,WAAW,EAAE,sBAAsB;CACtC;;;AAED,AAAA,MAAM,CAAC;EACH,OAAO,EAAE,IAAI;EACb,KAAK,EAAE,IAAI;EACX,cAAc,EAAE,MAAM;EACtB,MAAM,EAAE,IAAI;EACZ,gBAAgB,EAAE,kCAAkC,EAAE,kDAAyE;EAC/H,mBAAmB,EAAE,MAAM;EAC3B,iBAAiB,EAAE,SAAS;EAC5B,aAAa,EAAE,WAAW;EAC1B,OAAO,EAAE,IAAI;EACb,UAAU,EAAE,UAAU;CACzB;;;AAED,AAAA,IAAI,CAAC;EACD,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;EACnB,eAAe,EAAE,aAAa;EAC9B,WAAW,EAAE,MAAM;EACnB,UAAU,EAAE,UAAU;EACtB,QAAQ,EAAE,QAAQ;CACrB;;;AAED,AAAA,UAAU,CAAC;EACP,UAAU,EAAE,MAAM;EAClB,UAAU,EAAE,UAAU;EACtB,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,WAAW,EAAE,MAAM;EACnB,QAAQ,EAAE,QAAQ;EAClB,KAAK,EAAE,IAAI;EACX,GAAG,EAAE,KAAK;EACV,OAAO,EAAE,MAAM;EACf,UAAU,EEtDN,KAAgB;EFuDpB,aAAa,EAAE,IAAI;CACtB;;;AAED,AAAA,YAAY,CAAC;EACT,MAAM,EAAE,OAAO;CAYlB;;;AAbD,AAEI,YAFQ,CAER,MAAM,CAAC;EACH,OAAO,EAAE,IAAI;CAChB;;;AAJL,AAMQ,YANI,AAKP,MAAM,CACH,OAAO,CAAC;EACJ,OAAO,EAAE,MAAM;CAClB;;;AART,AASQ,YATI,AAKP,MAAM,CAIH,MAAM,CAAC;EACH,OAAO,EAAE,KAAK;CACjB;;;AAIT,AAAA,SAAS,CAAC;EACN,OAAO,EAAE,IAAI;CAKhB;;;AAND,AAEI,SAFK,CAEL,kBAAkB,CAAC;EACf,OAAO,EAAE,IAAI;EACb,UAAU,EAAE,IAAI;CACnB"
+}

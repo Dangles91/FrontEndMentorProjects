@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "fonts.css",
+	"sources": [
+		"css/fonts.scss"
+	],
+	"sourcesContent": [
+		"//    font-family: 'Overpass', sans-serif;\r\n@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap');\r\n//     font-family: 'Ubuntu', sans-serif;\r\n@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');"
+	],
+	"names": [],
+	"mappings": "AACA,OAAO,CAAC,kFAAI;AAEZ,OAAO,CAAC,oFAAI"
+}

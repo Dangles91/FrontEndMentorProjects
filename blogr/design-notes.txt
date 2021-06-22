@@ -1,0 +1,26 @@
+Header
+    Background included in nav
+    Centered text with buttons
+
+Editor Features (design for the future)
+    Mobile: column with image at 0
+    Desktop: Row with image at 1
+
+State of the art
+    Offset images - offset in SVG
+    Background div inside wrapper
+    Mobile: column
+    Desktop: Row
+
+Laptop - tooling
+    Mobile: background centered on laptop illustration
+    Desktop: background and laptop clipped in overflow on left
+    Desktop: Row
+    Mobile: Column
+
+Footer: 
+    Dekstop: Three columns, logo on left
+        Row
+    Mobile: Stacked columns, logo on top
+        Column
+
