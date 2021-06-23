@@ -6,6 +6,7 @@
     padding: 0;
 }
 
+// TODO: Double check fonts in the design images.
 body {
     font-size: 16px;
     font-family: "Ubuntu", sans-serif;
@@ -84,6 +85,7 @@ header {
     }
 }
 
+//TODO: Desktop styling
 .nav-menu {
     padding: 1rem 0;
     font-size: 20px;
@@ -238,6 +240,7 @@ header {
     text-align: center;
 }
 
+// separate articles so the article format could be used elsewhere
 .editor-articles {
     display: flex;
     width: 100%;
