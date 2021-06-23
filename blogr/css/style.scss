@@ -237,9 +237,20 @@ header {
 .editor {
     display: flex;
     flex-direction: column;
-    padding-top: 3rem;
+    padding-top: 5rem;
     padding-bottom: 3rem;
     text-align: center;
+}
+
+.editor-background {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    @media only screen and (min-width: $breakpoint-desktop) {
+        background-image: url("images/illustration-editor-desktop.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right -200px top 0px;
+    }
 }
 
 // separate articles so the article format could be used elsewhere
@@ -252,6 +263,9 @@ header {
     line-height: 3.5ch;
     article {
         margin-top: 2rem;
+        background-color: $white;
+        border-radius: 8px;
+        padding: 1rem;
     }
 }
 
@@ -272,24 +286,23 @@ header {
             justify-content: flex-start;
         }
     }
-}
-
-.editor-image {
-    margin: 1rem;
-    z-index: -1;
-    &.desktop {
-        display: none;
-        position: absolute;
-        right: -300px;
-        top: -200px;
-        overflow: hidden;
-    }
-    @media only screen and (min-width: $breakpoint-desktop) {
-        &.mobile {
-            display: none;
-        }
+    .editor-image {
+        margin: 1rem;
+        z-index: -1;
         &.desktop {
-            display: block;
+            display: none;
+            position: absolute;
+            right: -300px;
+            top: -200px;
+            overflow: hidden;
+        }
+        @media only screen and (min-width: $breakpoint-desktop) {
+            &.mobile {
+                display: none;
+            }
+            &.desktop {
+                display: block;
+            }
         }
     }
 }
