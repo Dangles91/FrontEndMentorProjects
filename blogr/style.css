@@ -33,7 +33,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 0 0 0 100px;
-  padding: 0rem 2rem 5rem 2rem;
+  padding: 0rem 1rem 4rem 1rem;
   box-sizing: border-box;
 }
 
@@ -285,19 +285,37 @@ header {
 
 /* line 231, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
 .content {
-  margin-top: 3rem;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* line 235, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
+/* line 237, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
 .editor {
   display: flex;
   flex-direction: column;
-  padding-top: 3rem;
+  padding-top: 5rem;
   padding-bottom: 3rem;
   text-align: center;
 }
 
-/* line 244, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
+/* line 245, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
+.editor-background {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 928px) {
+  /* line 245, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
+  .editor-background {
+    background-image: url("images/illustration-editor-desktop.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right -200px top 0px;
+  }
+}
+
+/* line 257, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
 .editor-articles {
   display: flex;
   width: 100%;
@@ -307,12 +325,15 @@ header {
   line-height: 3.5ch;
 }
 
-/* line 251, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
+/* line 264, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
 .editor-articles article {
   margin-top: 2rem;
+  background-color: white;
+  border-radius: 8px;
+  padding: 1rem;
 }
 
-/* line 256, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
+/* line 272, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
 .editor-features {
   display: flex;
   flex-direction: column;
@@ -321,7 +342,7 @@ header {
 }
 
 @media only screen and (min-width: 928px) {
-  /* line 256, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
+  /* line 272, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
   .editor-features {
     flex-direction: row;
     align-items: center;
@@ -330,7 +351,7 @@ header {
 }
 
 @media only screen and (min-width: 928px) {
-  /* line 266, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
+  /* line 282, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
   .editor-features .editor-articles {
     width: 55%;
     padding: 0 4rem;
@@ -338,14 +359,14 @@ header {
   }
 }
 
-/* line 275, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
-.editor-image {
+/* line 289, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
+.editor-features .editor-image {
   margin: 1rem;
   z-index: -1;
 }
 
-/* line 278, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
-.editor-image.desktop {
+/* line 292, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
+.editor-features .editor-image.desktop {
   display: none;
   position: absolute;
   right: -300px;
@@ -354,12 +375,12 @@ header {
 }
 
 @media only screen and (min-width: 928px) {
-  /* line 286, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
-  .editor-image.mobile {
+  /* line 300, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
+  .editor-features .editor-image.mobile {
     display: none;
   }
-  /* line 289, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
-  .editor-image.desktop {
+  /* line 303, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
+  .editor-features .editor-image.desktop {
     display: block;
   }
 }
