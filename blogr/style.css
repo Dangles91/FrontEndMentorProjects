@@ -40,14 +40,14 @@ header {
 @media only screen and (min-width: 928px) {
   /* line 26, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
   header {
-    height: 45vh;
+    height: 55vh;
   }
 }
 
 @media only screen and (min-width: 768px) {
   /* line 26, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
   header {
-    height: 45vh;
+    height: 55vh;
   }
 }
 
@@ -294,94 +294,86 @@ header {
 .editor {
   display: flex;
   flex-direction: column;
-  padding-top: 5rem;
+  padding-top: 3rem;
   padding-bottom: 3rem;
   text-align: center;
-}
-
-/* line 245, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
-.editor-background {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  position: relative;
 }
 
 @media only screen and (min-width: 928px) {
   /* line 245, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
-  .editor-background {
-    background-image: url("images/illustration-editor-desktop.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right -200px top 0px;
+  .editor h1 {
+    position: absolute;
+    width: 100%;
+    top: 50px;
   }
 }
 
-/* line 257, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
+/* line 254, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
 .editor-articles {
   display: flex;
-  width: 100%;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   padding: 2rem;
   line-height: 3.5ch;
 }
 
-/* line 264, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
+/* line 260, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
 .editor-articles article {
   margin-top: 2rem;
-  background-color: white;
-  border-radius: 8px;
-  padding: 1rem;
-}
-
-/* line 272, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
-.editor-features {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  margin-top: 2rem;
 }
 
 @media only screen and (min-width: 928px) {
-  /* line 272, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
-  .editor-features {
-    flex-direction: row;
-    align-items: center;
-    text-align: left;
+  /* line 260, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
+  .editor-articles article {
+    width: 75%;
   }
 }
 
 @media only screen and (min-width: 928px) {
-  /* line 282, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
-  .editor-features .editor-articles {
-    width: 55%;
-    padding: 0 4rem;
-    justify-content: flex-start;
+  /* line 268, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
+  .editor-images {
+    order: 1;
+    width: 50%;
   }
 }
 
-/* line 289, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
-.editor-features .editor-image {
+/* line 273, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
+.editor-images .editor-image {
   margin: 1rem;
   z-index: -1;
 }
 
-/* line 292, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
-.editor-features .editor-image.desktop {
+/* line 276, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
+.editor-images .editor-image.desktop {
   display: none;
-  position: absolute;
-  right: -300px;
-  top: -200px;
   overflow: hidden;
 }
 
 @media only screen and (min-width: 928px) {
-  /* line 300, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
-  .editor-features .editor-image.mobile {
+  /* line 281, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
+  .editor-images .editor-image.mobile {
     display: none;
   }
-  /* line 303, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
-  .editor-features .editor-image.desktop {
+  /* line 284, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
+  .editor-images .editor-image.desktop {
     display: block;
+  }
+}
+
+/* line 291, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
+.editor-features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (min-width: 928px) {
+  /* line 291, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
+  .editor-features {
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: left;
   }
 }
 

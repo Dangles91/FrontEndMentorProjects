@@ -34,10 +34,10 @@ header {
     padding: 0rem 1rem 4rem 1rem;
     box-sizing: border-box;
     @media only screen and (min-width: $breakpoint-desktop) {
-        height: 45vh;
+        height: 55vh;
     }
     @media only screen and (min-width: $breakpoint-tablet) {
-        height: 45vh;
+        height: 55vh;
     }
 }
 
@@ -237,63 +237,44 @@ header {
 .editor {
     display: flex;
     flex-direction: column;
-    padding-top: 5rem;
+    padding-top: 3rem;
     padding-bottom: 3rem;
     text-align: center;
-}
-
-.editor-background {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    position: relative;
     @media only screen and (min-width: $breakpoint-desktop) {
-        background-image: url("images/illustration-editor-desktop.svg");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: right -200px top 0px;
+        h1 {
+            position: absolute;
+            width: 100%;
+            top: 50px;
+        }
     }
 }
 
 // separate articles so the article format could be used elsewhere
 .editor-articles {
     display: flex;
-    width: 100%;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     padding: 2rem;
     line-height: 3.5ch;
     article {
         margin-top: 2rem;
-        background-color: $white;
-        border-radius: 8px;
-        padding: 1rem;
+        @media only screen and (min-width: $breakpoint-desktop) {
+            width: 75%;
+        }
     }
 }
 
-.editor-features {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    margin-top: 2rem;
+.editor-images {
     @media only screen and (min-width: $breakpoint-desktop) {
-        flex-direction: row;
-        align-items: center;
-        text-align: left;
-    }
-    .editor-articles {
-        @media only screen and (min-width: $breakpoint-desktop) {
-            width: 55%;
-            padding: 0 4rem;
-            justify-content: flex-start;
-        }
+        order: 1;
+        width: 50%;
     }
     .editor-image {
         margin: 1rem;
         z-index: -1;
         &.desktop {
             display: none;
-            position: absolute;
-            right: -300px;
-            top: -200px;
             overflow: hidden;
         }
         @media only screen and (min-width: $breakpoint-desktop) {
@@ -304,5 +285,16 @@ header {
                 display: block;
             }
         }
+    }
+}
+
+.editor-features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media only screen and (min-width: $breakpoint-desktop) {
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-align: left;
     }
 }
