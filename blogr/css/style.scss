@@ -137,8 +137,10 @@ header {
     flex-direction: column;
     padding-top: 1rem;
     hr {
+        width: 90%;
         color: $lightGray;
-        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
     }
     .account-action-buttons {
         margin-top: 1rem;
