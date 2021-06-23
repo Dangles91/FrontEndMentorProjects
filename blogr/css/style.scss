@@ -1,23 +1,16 @@
 @import "globals";
 @import "colours";
 @import "fonts";
-
-
 * {
     box-sizing: border-box;
-    //margin: 0;
     padding: 0;
-}
-
-p {
-    //padding: .5rem;
 }
 
 body {
     font-size: 16px;
-    font-family: "Overpass", sans-serif;
-    font-weight: 600;
-    color: $veryDarkBlue;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    color: $darkGrayishBlue;
     margin: 0;
 }
 
@@ -26,20 +19,19 @@ h2,
 h3,
 h4 {
     font-family: "Overpass", sans-serif;
+    color: $veryDarkBlue;
 }
 
 header {
     display: flex;
     width: 100%;
     flex-direction: column;
-    height: 75vh;
     background-image: url("images/bg-pattern-intro.svg"), linear-gradient(to bottom right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 0 0 0 100px;
-    padding: 0rem 2rem 2rem 2rem;
+    padding: 0rem 2rem 5rem 2rem;
     box-sizing: border-box;
-
     @media only screen and (min-width: $breakpoint-desktop) {
         height: 45vh;
     }
@@ -70,7 +62,6 @@ header {
     padding: 2rem 0;
     background: $white;
     border-radius: 6px;
-    padding: 1.5rem;
     box-shadow: 0px 15px 20px 4px rgba(36, 36, 36, 0.274);
     &.shown {
         display: flex;
@@ -79,6 +70,7 @@ header {
 
 .menu-button {
     cursor: pointer;
+    margin-right: 1rem;
     .cross {
         display: none;
     }
@@ -99,7 +91,6 @@ header {
     .menu-header {
         display: relative;
         padding: 1rem;
-        
         &:after {
             position: absolute;
             display: inline-block;
@@ -115,7 +106,7 @@ header {
         display: none;
         padding: 1rem;
         margin-top: 1rem;
-        background-color:$lightGray;
+        background-color: $lightGray;
         width: 100%;
         color: $darkGrayishBlue;
         border-radius: 8px;
@@ -127,23 +118,16 @@ header {
     a {
         text-decoration: none;
         color: inherit;
-    }  
-
+    }
     .menu-header.shown {
         color: $darkGrayishBlue;
         &::after {
             content: "\f106";
         }
     }
-
     .menu-header.shown+.nav-menu-dropdown {
         display: block;
     }
-}
-
-
-.header-buttons {
-    
 }
 
 .nav-account-actions {
@@ -152,12 +136,10 @@ header {
     display: flex;
     flex-direction: column;
     padding-top: 1rem;
-
     hr {
         color: $lightGray;
         margin: 0;
     }
-
     .account-action-buttons {
         margin-top: 1rem;
         list-style: none;
@@ -167,34 +149,21 @@ header {
     }
 }
 
-.btn {
-    color: inherit;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 700;
-    text-decoration: none;
-}
-
-.btn-signup {
-    padding: 1rem 3rem;
-    border-radius: 25px;
-    background-image: linear-gradient(to right, $veryLightRed, $lightRed);
-    color: $white;
-
-    @media only screen and (min-width: $breakpoint-desktop)
-    {
-        background-image: unset;
-        background-color: $white;
-    }
-}
-
 .header-content {
     color: $white;
     text-align: center;
-    display: flex;
+    Display: flex;
     flex-direction: column;
     height: 60%;
     margin-top: auto;
     margin-bottom: auto;
+    font-family: "Overpass";
+    font-weight: 300;
+    font-size: 14pt;
+    h1 {
+        color: $white;
+        font-size: 31pt;
+    }
 }
 
 .horizontal-btn-container {
@@ -206,12 +175,35 @@ header {
     list-style: none;
 }
 
+%btn {
+    color: inherit;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.btn-standard {
+    @extend %btn;
+}
+
+.btn-signup {
+    @extend %btn;
+    padding: 1rem 3rem;
+    border-radius: 25px;
+    background-image: linear-gradient(to right, $veryLightRed, $lightRed);
+    color: $white;
+    @media only screen and (min-width: $breakpoint-desktop) {
+        background-image: unset;
+        background-color: $white;
+    }
+}
+
 .btn-white {
+    @extend %btn;
     margin: .5rem;
     padding: 1rem 1rem;
     border-radius: 25px;
     text-decoration: none;
-
     &.solid {
         color: $lightRed;
         background-color: $white;
@@ -220,14 +212,75 @@ header {
             color: $white;
         }
     }
-
     &.outline {
         border: 2px solid $white;
         color: $white;
-
         &:hover {
             background-color: white;
             color: $lightRed;
+        }
+    }
+}
+
+.content {
+    margin-top: 3rem;
+}
+
+.editor {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+.editor-articles {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    line-height: 3.5ch;
+    article {
+        margin-top: 2rem;
+    }
+}
+
+.editor-features {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 2rem;
+    @media only screen and (min-width: $breakpoint-desktop) {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+    }
+    .editor-articles {
+        @media only screen and (min-width: $breakpoint-desktop) {
+            width: 55%;
+            padding: 0 4rem;
+            justify-content: flex-start;
+        }
+    }
+}
+
+.editor-image {
+    margin: 1rem;
+    z-index: -1;
+    &.desktop {
+        display: none;
+        position: absolute;
+        right: -300px;
+        top: -200px;
+        overflow: hidden;
+    }
+    @media only screen and (min-width: $breakpoint-desktop) {
+        &.mobile {
+            display: none;
+        }
+        &.desktop {
+            display: block;
         }
     }
 }
