@@ -363,6 +363,7 @@ header {
 
 /* line 291, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
 .editor-features {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
