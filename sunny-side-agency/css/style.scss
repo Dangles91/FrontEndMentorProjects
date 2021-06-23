@@ -1,7 +1,8 @@
 @import "globals";
 @import "fonts";
-
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: "Fraunces", serif;
 }
 
@@ -55,15 +56,9 @@ header {
     flex-direction: column;
     align-items: center;
     margin: 0;
-
     p {
         text-transform: uppercase;
     }
-
-    img {
-        margin-top: 5rem;
-    }
-
     h1 {
         text-transform: uppercase;
         letter-spacing: .8rem;
@@ -81,15 +76,12 @@ header {
     top: 50px;
     width: 100%;
     padding: 2rem 0;
-    
     background-color: $white;
     display: none;
-
     li {
         list-style-type: none;
         padding: 1.3rem;
     }
-
     li a {
         text-decoration: none;
         color: $darkModCyan;
@@ -102,7 +94,6 @@ header {
         text-transform: uppercase;
         font-family: "Fraunces", serif;
         font-size: 16px;
-        
         color: black;
         padding: 1rem 1.5rem;
         border-radius: 25px;
@@ -126,30 +117,24 @@ header {
 .about-list {
     display: flex;
     flex-direction: column;
-
     .about-item {
         display: flex;
         //font-size: 12pt;
         font-weight: 600;
         flex-direction: column;
         background-color: $white;
-
-        .about-text {            
+        .about-text {
             text-align: center;
             line-height: 3ch;
             color: $darkModCyan;
-
             padding: 3rem 1rem;
             width: 90%;
             margin-left: auto;
             margin-right: auto;
-
             order: 1;
-
             &.first {
                 order: 1;
             }
-
             h1 {
                 font-family: "Fraunces", serif;
                 font-size: 28pt;
@@ -157,8 +142,7 @@ header {
                 line-height: normal;
                 color: $veryDarkDesatBlue
             }
-
-            p{
+            p {
                 margin-bottom: 2.5rem;
             }
         }
@@ -168,10 +152,9 @@ header {
 .about-image-wrapper {
     width: 100%;
     box-sizing: border-box;
-
     .about-image {
-        width:100%;
-        height:100%;
+        width: 100%;
+        height: 100%;
     }
 }
 
@@ -186,7 +169,6 @@ header {
     color: $veryDarkDesatBlue;
     position: relative;
     z-index: 1;
-
     &:after {
         content: '';
         position: absolute;
@@ -197,19 +179,15 @@ header {
         border-radius: 15px;
         left: -5px;
     }
-
     &.yellow:after {
         background-color: $primaryYellowHighlight;
     }
-
     &.yellow:hover:after {
         background-color: $primaryYellow;
     }
-
     &.red:after {
         background-color: $primaryRedHighlight;
     }
-
     &.red:hover:after {
         background-color: $primaryRed;
     }
@@ -263,7 +241,6 @@ header {
                 padding: 1rem;
                 font-size: 18px;
             }
-
             .testimonial-person {
                 p {
                     padding: 0;
@@ -288,31 +265,26 @@ footer {
     flex-direction: column;
     align-items: center;
     color: $darkModCyan;
-
     #footer-logo {
         margin-top: 3rem;
         height: 40px;
         fill: $darkModCyan;
     }
-
     .footer-gallery {
         display: flex;
         flex-flow: row wrap;
         max-width: $content-maxWidth;
-
         img {
             width: 50%;
         }
     }
-
     .footer-nav {
         display: flex;
         flex-direction: row;
+        padding: 0;
         list-style: none;
-        
         li {
-            margin: 1rem 2rem;
-
+            margin: 1rem 1rem;
             a {
                 color: $darkModCyan;
                 text-decoration: none;
@@ -322,16 +294,13 @@ footer {
             }
         }
     }
-
     .socials {
         display: flex;
         flex-direction: row;
         cursor: pointer;
-
         svg {
             fill: $darkModCyan;
             margin: 4rem 1rem;
-
             &:hover {
                 fill: $white;
             }
@@ -343,18 +312,14 @@ footer {
     .about-image {
         width: 100%;
         height: 100%;
-
         .mobile {
             display: none;
         }
-
         .desktop {
             display: block;
         }
     }
-
-    #nav-items 
-    {
+    #nav-items {
         background-color: transparent;
         position: relative;
         display: flex;
@@ -365,78 +330,61 @@ footer {
         top: 0;
         margin: 0;
         padding: 0;
-
         li a {
             color: $white;
         }
-
         .nav-contact {
             background: $white;
-
-            &:hover 
-            {
+            &:hover {
                 background: $transparentWhite;
                 color: $white;
             }
         }
     }
-
     #mobile-burger {
         display: none;
     }
-
     #nav-items:before {
         display: none;
-        border:0;
+        border: 0;
     }
-
     .header {
         background-image: url("images/desktop/image-header.jpg");
         background-position: center;
-
         img {
             margin-top: 10rem;
         }
     }
-
     .about-list {
         .about-item {
             flex-direction: row;
-
-            .about-text {                
+            .about-text {
                 text-align: left;
                 box-sizing: border-box;
                 width: 50%;
-
                 margin: auto;
                 padding: 0 7.0rem 0 10rem;
                 order: 1;
-
                 &.first {
                     order: 0;
                 }
             }
         }
     }
-
     .about-image-wrapper {
         width: 50%;
         box-sizing: border-box;
     }
-
     .services-list {
         flex-direction: row;
-
         .service {
             background-position: center;
             padding: 1rem 8rem 3rem 10rem;
             height: 600px;
             width: 50%;
-
             &.graphic-design {
                 background-image: url("images/desktop/image-graphic-design.jpg");
             }
-
             &.photography {
                 background-image: url("images/desktop/image-photography.jpg");
             }
@@ -444,26 +392,22 @@ footer {
     }
     .testimonials {
         padding: 4rem;
-        
         .testimonials-list {
             padding: 2rem 4rem;
             display: flex;
             align-items: flex-end;
             flex-direction: row;
-
             .testimonial {
-                
                 margin: 0;
             }
         }
     }
-
     footer {
         .footer-gallery {
             flex-flow: row nowrap;
             width: 100%;
         }
-    }   
+    }
 }
 
 .attribution {
