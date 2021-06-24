@@ -1,20 +1,17 @@
-$('document').ready(function()
-{
+$('document').ready(function() {
     // Add click and tap handlers for navigation bar menus
     $('.menu-header').on("click tap", function() {
-        if($(this).hasClass("shown")) {
+        if ($(this).hasClass("shown")) {
             $(this).removeClass("shown");
-        }
-        else
-        {
+        } else {
             $('.menu-header').removeClass("shown");
             $(this).addClass("shown");
         }
     });
 
     // Add click and tap handlers for mobile burger menu button 
-    $('.menu-button').on("click tap", function() {
-        if($(this).hasClass("shown")) {
+    $('.btn-mobile-menu').on("click tap", function() {
+        if ($(this).hasClass("shown")) {
 
             $(this).removeClass("shown");
             $('.nav-menus').removeClass("shown");
