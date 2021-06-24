@@ -1,26 +1,35 @@
 @import "globals";
 @import "colours";
 @import "fonts";
+// reset box-sizing to be more predictable.
 * {
     box-sizing: border-box;
+    margin: 0;
     padding: 0;
 }
 
 // TODO: Double check fonts in the design images.
+// default body copy
 body {
     font-size: 16px;
     font-family: "Ubuntu", sans-serif;
     font-weight: 400;
     color: $darkGrayishBlue;
-    margin: 0;
 }
 
+// default heading typography and margins
 h1,
 h2,
 h3,
 h4 {
     font-family: "Overpass", sans-serif;
     color: $veryDarkBlue;
+    margin: 1.125em 0;
+}
+
+// set paragraph margins
+p {
+    margin: 1em 0;
 }
 
 header {
@@ -31,7 +40,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 0 0 0 100px;
-    padding: 0rem 1rem 4rem 1rem;
+    padding: 0rem 1em 4em 1em;
     box-sizing: border-box;
     @media only screen and (min-width: $breakpoint-desktop) {
         height: 55vh;
