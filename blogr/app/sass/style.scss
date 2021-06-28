@@ -1,8 +1,9 @@
 @import "globals";
 @import "colours";
 @import "fonts";
+
 // reset box-sizing to be more predictable.
-* {
+*, ::before, ::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;

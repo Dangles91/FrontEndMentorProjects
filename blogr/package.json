@@ -1,0 +1,24 @@
+{
+	"name": "blogr",
+	"version": "0.0.1",
+	"description": "rontend mentor challenge.",
+	"main": "./dist/index.html",
+	"author": {
+		"name": "Aidan Danglmaier"
+	},
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Dangles91/FrontEndMentorProjects.git"
+	},
+	"browserslist": [
+		"last 2 versions",
+		"> 0.25%"
+	],
+	"devDependencies": {
+		"browser-sync": "^2.27.3",
+		"gulp": "^4.0.2",
+		"gulp-sass": "^5.0.0",
+		"sass": "^1.35.1"
+	}
+}

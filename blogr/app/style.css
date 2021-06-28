@@ -1,13 +1,12 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
-/* line 5, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
-* {
+*, ::before, ::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* line 13, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
 body {
   font-size: 16px;
   font-family: "Ubuntu", sans-serif;
@@ -15,7 +14,6 @@ body {
   color: #5c707f;
 }
 
-/* line 21, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
 h1,
 h2,
 h3,
@@ -25,12 +23,10 @@ h4 {
   margin: 1.125em 0;
 }
 
-/* line 31, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
 p {
   margin: 1em 0;
 }
 
-/* line 35, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
 header {
   display: flex;
   width: 100%;
@@ -42,22 +38,17 @@ header {
   padding: 0rem 1em 4em 1em;
   box-sizing: border-box;
 }
-
 @media only screen and (min-width: 928px) {
-  /* line 35, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
   header {
     height: 55vh;
   }
 }
-
 @media only screen and (min-width: 768px) {
-  /* line 35, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
   header {
     height: 55vh;
   }
 }
 
-/* line 53, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
 .nav {
   padding-top: 2rem;
   display: flex;
@@ -68,7 +59,6 @@ header {
   position: relative;
 }
 
-/* line 63, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
 .nav-menus {
   text-align: center;
   box-sizing: border-box;
@@ -83,59 +73,43 @@ header {
   border-radius: 6px;
   box-shadow: 0px 15px 20px 4px rgba(36, 36, 36, 0.274);
 }
-
-/* line 76, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
 .nav-menus.shown {
   display: flex;
 }
 
-/* line 81, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
 .btn-mobile-menu {
   cursor: pointer;
   margin-right: 1rem;
 }
-
-/* line 84, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
 .btn-mobile-menu .cross {
   display: none;
 }
-
-/* line 88, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
 .btn-mobile-menu.shown .burger {
   display: none;
 }
-
-/* line 91, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
 .btn-mobile-menu.shown .cross {
   display: block;
 }
 
-/* line 98, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
 .nav-menu {
   padding: 1rem 0;
   font-size: 20px;
   width: 100%;
 }
-
-/* line 102, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
 .nav-menu .menu-header {
   display: relative;
   padding: 1rem;
 }
-
-/* line 105, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
 .nav-menu .menu-header:after {
   position: absolute;
   display: inline-block;
-  margin-left: .5rem;
+  margin-left: 0.5rem;
   font-size: 20px;
   font-family: "Font Awesome 5 Free";
   color: #ff525d;
   font-weight: 900;
-  content: '\f107';
+  content: "";
 }
-
-/* line 116, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
 .nav-menu .nav-menu-dropdown {
   display: none;
   padding: 1rem;
@@ -146,34 +120,23 @@ header {
   border-radius: 8px;
   list-style: none;
 }
-
-/* line 125, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
 .nav-menu .nav-menu-dropdown li {
-  padding: .8rem;
+  padding: 0.8rem;
 }
-
-/* line 129, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
 .nav-menu a {
   text-decoration: none;
   color: inherit;
 }
-
-/* line 133, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
 .nav-menu .menu-header.shown {
   color: #5c707f;
 }
-
-/* line 135, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
 .nav-menu .menu-header.shown::after {
-  content: "\f106";
+  content: "";
 }
-
-/* line 139, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
 .nav-menu .menu-header.shown + .nav-menu-dropdown {
   display: block;
 }
 
-/* line 144, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
 .nav-account-actions {
   width: 100%;
   font-size: 20px;
@@ -181,27 +144,20 @@ header {
   flex-direction: column;
   padding-top: 1rem;
 }
-
-/* line 150, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
 .nav-account-actions hr {
   width: 90%;
   color: #efeff1;
   margin-left: auto;
   margin-right: auto;
 }
-
-/* line 156, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
 .nav-account-actions .account-action-buttons {
   margin-top: 1rem;
   list-style: none;
 }
-
-/* line 159, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
 .nav-account-actions .account-action-buttons li {
   padding: 1.5rem;
 }
 
-/* line 165, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
 .header-content {
   color: white;
   text-align: center;
@@ -216,14 +172,11 @@ header {
   font-weight: 300;
   font-size: 14pt;
 }
-
-/* line 178, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
 .header-content h1 {
   color: white;
   font-size: 31pt;
 }
 
-/* line 184, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
 .horizontal-btn-container {
   margin-top: 2rem;
   width: 100%;
@@ -233,70 +186,55 @@ header {
   list-style: none;
 }
 
-/* line 193, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
-.btn-standard, .btn-signup, .btn-white {
+.btn-white, .btn-signup, .btn-standard {
   color: inherit;
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
   text-decoration: none;
 }
 
-/* line 204, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
 .btn-signup {
   padding: 1rem 3rem;
   border-radius: 25px;
   background-image: linear-gradient(to right, #ff7a85, #ff525d);
   color: white;
 }
-
 @media only screen and (min-width: 928px) {
-  /* line 204, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
   .btn-signup {
     background-image: unset;
     background-color: white;
   }
 }
 
-/* line 216, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
 .btn-white {
-  margin: .5rem;
+  margin: 0.5rem;
   padding: 1rem 1rem;
   border-radius: 25px;
   text-decoration: none;
 }
-
-/* line 222, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
 .btn-white.solid {
   color: #ff525d;
   background-color: white;
 }
-
-/* line 225, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
 .btn-white.solid:hover {
   background-color: #ff7a85;
   color: white;
 }
-
-/* line 230, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
 .btn-white.outline {
   border: 2px solid white;
   color: white;
 }
-
-/* line 233, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
 .btn-white.outline:hover {
   background-color: white;
   color: #ff525d;
 }
 
-/* line 240, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
 .content {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 246, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
 .editor {
   display: flex;
   flex-direction: column;
@@ -305,9 +243,7 @@ header {
   text-align: center;
   position: relative;
 }
-
 @media only screen and (min-width: 928px) {
-  /* line 254, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
   .editor h1 {
     position: absolute;
     width: 100%;
@@ -315,7 +251,6 @@ header {
   }
 }
 
-/* line 263, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
 .editor-articles {
   display: flex;
   flex-direction: column;
@@ -323,65 +258,48 @@ header {
   padding: 2rem;
   line-height: 3.5ch;
 }
-
-/* line 269, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
 .editor-articles article {
   margin-top: 2rem;
 }
-
 @media only screen and (min-width: 928px) {
-  /* line 269, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
   .editor-articles article {
     width: 75%;
   }
 }
 
 @media only screen and (min-width: 928px) {
-  /* line 277, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
   .editor-images {
     order: 1;
     width: 50%;
   }
 }
-
-/* line 282, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
 .editor-images .editor-image {
   margin: 1rem;
   z-index: -1;
 }
-
-/* line 285, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
 .editor-images .editor-image.desktop {
   display: none;
   overflow: hidden;
 }
-
 @media only screen and (min-width: 928px) {
-  /* line 290, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
   .editor-images .editor-image.mobile {
     display: none;
   }
-  /* line 293, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
   .editor-images .editor-image.desktop {
     display: block;
   }
 }
 
-/* line 300, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
 .editor-features {
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 @media only screen and (min-width: 928px) {
-  /* line 300, ../../../../../source/frontend-mentor/FrontEndMentorProjects/blogr/css/style.scss */
   .editor-features {
     flex-direction: row;
     justify-content: space-evenly;
     text-align: left;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
