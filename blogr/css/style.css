@@ -1,0 +1,305 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  color: #5c707f;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Overpass", sans-serif;
+  color: #1f3f5b;
+  margin: 1.125em 0;
+}
+
+p {
+  margin: 1em 0;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-image: url("images/bg-pattern-intro.svg"), linear-gradient(to bottom right, #ff8f70, #ff3d54);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0 0 0 100px;
+  padding: 0rem 1em 4em 1em;
+  box-sizing: border-box;
+}
+@media only screen and (min-width: 928px) {
+  header {
+    height: 55vh;
+  }
+}
+@media only screen and (min-width: 768px) {
+  header {
+    height: 55vh;
+  }
+}
+
+.nav {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.nav-menus {
+  text-align: center;
+  box-sizing: border-box;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  top: 7rem;
+  padding: 2rem 0;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0px 15px 20px 4px rgba(36, 36, 36, 0.274);
+}
+.nav-menus.shown {
+  display: flex;
+}
+
+.btn-mobile-menu {
+  cursor: pointer;
+  margin-right: 1rem;
+}
+.btn-mobile-menu .cross {
+  display: none;
+}
+.btn-mobile-menu.shown .burger {
+  display: none;
+}
+.btn-mobile-menu.shown .cross {
+  display: block;
+}
+
+.nav-menu {
+  padding: 1rem 0;
+  font-size: 20px;
+  width: 100%;
+}
+.nav-menu .menu-header {
+  display: relative;
+  padding: 1rem;
+}
+.nav-menu .menu-header:after {
+  position: absolute;
+  display: inline-block;
+  margin-left: 0.5rem;
+  font-size: 20px;
+  font-family: "Font Awesome 5 Free";
+  color: #ff525d;
+  font-weight: 900;
+  content: "";
+}
+.nav-menu .nav-menu-dropdown {
+  display: none;
+  padding: 1rem;
+  margin-top: 1rem;
+  background-color: #efeff1;
+  width: 100%;
+  color: #5c707f;
+  border-radius: 8px;
+  list-style: none;
+}
+.nav-menu .nav-menu-dropdown li {
+  padding: 0.8rem;
+}
+.nav-menu a {
+  text-decoration: none;
+  color: inherit;
+}
+.nav-menu .menu-header.shown {
+  color: #5c707f;
+}
+.nav-menu .menu-header.shown::after {
+  content: "";
+}
+.nav-menu .menu-header.shown + .nav-menu-dropdown {
+  display: block;
+}
+
+.nav-account-actions {
+  width: 100%;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+.nav-account-actions hr {
+  width: 90%;
+  color: #efeff1;
+  margin-left: auto;
+  margin-right: auto;
+}
+.nav-account-actions .account-action-buttons {
+  margin-top: 1rem;
+  list-style: none;
+}
+.nav-account-actions .account-action-buttons li {
+  padding: 1.5rem;
+}
+
+.header-content {
+  color: white;
+  text-align: center;
+  Display: flex;
+  flex-direction: column;
+  height: 60%;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: "Overpass";
+  font-weight: 300;
+  font-size: 14pt;
+}
+.header-content h1 {
+  color: white;
+  font-size: 31pt;
+}
+
+.horizontal-btn-container {
+  margin-top: 2rem;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.btn-white, .btn-signup, .btn-standard {
+  color: inherit;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.btn-signup {
+  padding: 1rem 3rem;
+  border-radius: 25px;
+  background-image: linear-gradient(to right, #ff7a85, #ff525d);
+  color: white;
+}
+@media only screen and (min-width: 928px) {
+  .btn-signup {
+    background-image: unset;
+    background-color: white;
+  }
+}
+
+.btn-white {
+  margin: 0.5rem;
+  padding: 1rem 1rem;
+  border-radius: 25px;
+  text-decoration: none;
+}
+.btn-white.solid {
+  color: #ff525d;
+  background-color: white;
+}
+.btn-white.solid:hover {
+  background-color: #ff7a85;
+  color: white;
+}
+.btn-white.outline {
+  border: 2px solid white;
+  color: white;
+}
+.btn-white.outline:hover {
+  background-color: white;
+  color: #ff525d;
+}
+
+.content {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.editor {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: center;
+  position: relative;
+}
+@media only screen and (min-width: 928px) {
+  .editor h1 {
+    position: absolute;
+    width: 100%;
+    top: 50px;
+  }
+}
+
+.editor-articles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  line-height: 3.5ch;
+}
+.editor-articles article {
+  margin-top: 2rem;
+}
+@media only screen and (min-width: 928px) {
+  .editor-articles article {
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: 928px) {
+  .editor-images {
+    order: 1;
+    width: 50%;
+  }
+}
+.editor-images .editor-image {
+  margin: 1rem;
+  z-index: -1;
+}
+.editor-images .editor-image.desktop {
+  display: none;
+  overflow: hidden;
+}
+@media only screen and (min-width: 928px) {
+  .editor-images .editor-image.mobile {
+    display: none;
+  }
+  .editor-images .editor-image.desktop {
+    display: block;
+  }
+}
+
+.editor-features {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media only screen and (min-width: 928px) {
+  .editor-features {
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: left;
+  }
+}
