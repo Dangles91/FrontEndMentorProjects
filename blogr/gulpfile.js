@@ -5,20 +5,20 @@ var browserSync = require('browser-sync');
 
 var paths = {
 	input: 'app/',
-	output: 'dist/',
+	output: './',
 	scripts: {
 		input: 'app/js/*',
-		output: 'dist/js/'
+		output: './js/'
 	},
 	styles: {
 		input: 'app/sass/**/*.{scss,sass}',
-		output: 'dist/css/'
+		output: './css/'
 	},
 	copy: {
 		input: 'app/copy/**/*',
 		output: './'
 	},
-	reload: './dist/'
+	reload: './'
 };
 
 var buildStyles = function (done) {
